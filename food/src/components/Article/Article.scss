@@ -1,0 +1,46 @@
+@import '../../assets/sass/general.scss';
+
+article{
+    max-width: 130px;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: var(--color-white);
+    position: fixed;
+    padding: 24px;
+    border-right: 1px solid #E4E4E4;
+    @include center (flex , center , none);
+    flex-direction: column;
+    gap: 20px;
+
+    .link{
+        text-align: center;
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-radius: 8px;
+        padding: 10px 0;
+
+        .icon{
+            font-size: 32px;
+            color: var(--color-text);
+        }
+
+        p{
+            @include text(12px , var(--color-text) , 116%);
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+    }
+
+    .active{
+        background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
+        
+        p{
+            color: var(--color-white);
+        }
+
+        .icon{
+            color: var(--color-white);
+        }
+    }
+}
