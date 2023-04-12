@@ -1,8 +1,8 @@
 
 @mixin center ($flex , $center , $space-between) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: $flex;
+    align-items: $center;
+    justify-content: $space-between;
 }
 
 @mixin text ($fs , $c , $lh) {

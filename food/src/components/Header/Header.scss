@@ -46,6 +46,8 @@ header{
 
     .navbar{
         @include center (flex , center , none);
+        margin-left: 20%;
+        gap: 16px;
 
         nav{
             @include center (flex , center , none);
@@ -76,6 +78,43 @@ header{
                 .icon{
                     color: var(--color-active);
                 }
+            }
+        }
+
+        .links{
+            width: max-content;
+            padding: 8px 20px;
+            border-radius: 58px;
+            background: #FFF5EE;
+            font-weight: 600;
+            margin-left: 40px;
+            @include text (14px , var(--color-active) , 150%);
+        }
+
+        .data{
+            background: #FFF5EE;
+            width: max-content;
+            padding: 8px 20px;
+            border-radius: 58px;
+            @include text (14px , var(--color) , 150%);
+
+            p{
+                @include center (flex , center , none);
+                gap: 20px;
+            }
+        }
+
+        .acound{
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+            border-radius: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
             }
         }
     }
