@@ -25,6 +25,13 @@ const Header = () => {
         </div>
         <div className="navbar">
             <Navbar/>
+            <Link className='links'>Dinning option</Link>
+            <div className="data">
+                <p><span>10:53:00</span>   <span>26/02/2023</span></p>
+            </div>
+            <div className="acound">
+                <img src="https://images.pexels.com/photos/15445847/pexels-photo-15445847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            </div>
         </div>
     </header>
   )
