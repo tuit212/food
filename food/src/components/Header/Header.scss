@@ -1,0 +1,82 @@
+@import '../../assets/sass/general.scss';
+
+header{
+    padding: 16px 30px;
+    border-bottom: 1px solid var(--color-text);
+    @include center (flex , center , none);
+
+    .logos{
+        @include center (flex , center , none);
+        gap: 28px;
+    }
+
+    .header__back{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid var(--color-text);
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+        .icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 18px;
+            transform: translate(-50% , -50%);
+        }
+    }
+
+    .header__logo {
+
+        .logo{
+            @include center (flex , center , none);
+            gap: 10px;
+
+            h3{
+                @include text (16px , var(--color) , 150%);
+            }
+
+            p{
+                @include text (14px , var(--color-text) , 140%);
+            }
+        }
+    }
+
+    .navbar{
+        @include center (flex , center , none);
+
+        nav{
+            @include center (flex , center , none);
+            gap: 32px;
+
+            .link{
+                @include center (flex , center , none);
+
+                span{
+                    @include text (16px , var(--color-text) , 150%);
+                    font-weight: 500;
+                    margin-left: 12px;
+                    color: var(--color-text);
+                }
+
+                .icon{
+                    color: var(--color-text);
+                    font-size: 20px;
+                }
+            }
+
+            .active{
+
+                span{
+                    color: var(--color-active);
+                }
+
+                .icon{
+                    color: var(--color-active);
+                }
+            }
+        }
+    }
+}
